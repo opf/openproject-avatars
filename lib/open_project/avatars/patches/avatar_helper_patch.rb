@@ -133,6 +133,8 @@ AvatarHelper.class_eval do
         object.mail
       elsif object.to_s =~ %r{<(.+?)>}
         $1
+      elsif object.is_a? String
+        object
       end
     end
   end
