@@ -18,11 +18,15 @@ Installation
 
 To install the OpenProject Avatars plugin you need to add the following line to the `Gemfile.plugins` in your OpenProject folder (if you use a different OpenProject version than OpenProject 7, adapt `:branch => "stable/7"` to your OpenProject version):
 
-`gem "openproject-avatars", git: "https://github.com/opf/openproject-avatars", :branch => "stable/7"`
+`gem "openproject-avatars", git: "https://github.com/opf/openproject-avatars", :branch => "stable/8"`
 
 Afterwards, run:
 
 `bundle install`
+
+When in development environment: To link this plugin for Angular, run this command from the OpenProject root directory:
+
+`./bin/setup_dev`
 
 Deinstallation
 --------------
