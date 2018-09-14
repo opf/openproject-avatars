@@ -133,7 +133,9 @@ AvatarHelper.class_eval do
         object.mail
       elsif object.to_s =~ %r{<(.+?)>}
         $1
-      elsif object.is_a? String
+      elsif object.to_s.include? '@'
+        # Treat anything with an @ as a mail address.
+        # False positives are properly handled by gravatar. 
         object
       end
     end
